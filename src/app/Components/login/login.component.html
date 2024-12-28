@@ -1,0 +1,14 @@
+
+<div class="container user-form mt-3">
+    <form [formGroup]="loginform" (ngSubmit)="logMeIn()">
+        <br>
+            <img class="profile-img" src="assets/tester.jpeg">
+        <br>
+        <br>
+        <input class="form-control" type="text" placeholder="Username" formControlName="username">
+        <br>
+        <input class="form-control" type="password" placeholder="Password" formControlName="password">
+        <br>
+        <button class="btn btn-primary" [disabled]="loginform.invalid" type="submit">LOGIN</button>
+    </form>
+</div>

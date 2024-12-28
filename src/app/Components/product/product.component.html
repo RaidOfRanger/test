@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table table-bordered border-primary">
+        <thead >
+            <tr class="table-primary">
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Category</th>
+              <th scope="col">
+                Price
+                <span *ngIf="sortAscending" (click)="sortProductsByPrice()">&#9650;</span> <!-- Up Arrow -->
+                <span *ngIf="!sortAscending" (click)="sortProductsByPrice()">&#9660;</span> 
+            </th>
+              <th scope="col">Image</th>
+            </tr>
+          </thead>
+          <tbody >
+           
+                <tr *ngFor="let data of AllProduct">
+                    <td>{{data.id}}</td>
+                    <td>{{data.title}}</td>
+                    <td>{{data.description}}</td>
+                    <td>{{data.category}}</td>
+                    <td>${{data.price}}</td>
+                    <td>
+                        <img class="product-image" [src]="data.images"  >
+                        <br>
+                        <button class="btn btn-primary" type="submit">Update</button>
+                    </td>
+                  </tr>
+          </tbody>
+    </table>
+</div>

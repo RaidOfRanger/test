@@ -1,0 +1,16 @@
+.navbar{
+    display: flex
+    
+}
+
+.logout-link{
+    display: flex;
+}
+
+.header{
+    background-color: rgb(177, 209, 245);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    
+}

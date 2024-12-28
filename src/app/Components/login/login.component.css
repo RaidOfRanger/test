@@ -1,0 +1,22 @@
+.user-form{
+    background-color: rgb(215, 211, 206);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    border: 1px solid #ccc; 
+    border-radius: 25px; 
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 25px;
+}
+.profile-img{
+    mix-blend-mode: multiply;
+    
+}
